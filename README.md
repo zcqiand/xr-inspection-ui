@@ -48,7 +48,6 @@
 
 ## 联系我
 
-- 微信公众号：南荣相如
 - 邮箱：1282301776@qq.com
 - 主页：https://home.nanrong.store/
 - Github: https://github.com/zcqiand
