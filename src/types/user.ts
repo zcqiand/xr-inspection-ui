@@ -1,12 +1,7 @@
-export interface UserRequest {
-  username: string;
-  password: string;
-  enabled?: boolean;
-  roleIds?: number[];
-}
-
-export interface UserResponse {
-  id: number;
-  username: string;
-  enabled: boolean;
+export interface User {
+  id: number
+  name: string
+  username: string
+  email: string
+  roles: string[]
 }
