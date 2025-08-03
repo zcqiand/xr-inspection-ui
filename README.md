@@ -1,5 +1,60 @@
-# Vue 3 + Vite
+# xr-inspection:基于 Java + Vue 的实验室信息管理系统（LIMS） - 前端部分
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 系统介绍
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+本实验室信息管理系统（LIMS）是利用先进的 AI 编程助手 RooCode 工具开发平台构建的现代化解决方案，旨在全面提升实验室的运营效率、数据管理能力与合规性水平。系统核心采用 Java 技术栈与Vue.js框架，实现了前后端分离的先进架构，为各类科研、检测及生产实验室提供了一套功能强大、稳定可靠且易于扩展的管理平台。
+
+该项目为前后端分离项目的前端部分，后端项目地址：[传送门](https://github.com/zcqiand/xr-inspection-api)。
+
+## 系统文档
+
+- [产品需求文档](./docs/product_requirement_docs.md)
+- [系统架构](./docs/architecture.md)
+- [技术规范](./docs/technical.md)
+- [更新日志](./tasks/changelog.md)
+
+## 功能模块
+
+1. **试验过程管理**，在该模块中，需要实现以下功能：
+   - 委托登记: 支持多源任务接入方式，实现智能化合同评审，管理样品信息及影像资料，实时反馈任务状态。
+   - 任务分配: 实现试验任务的智能分配机制，支持自动规则分配与人工调配双模式，确保任务高效执行。
+   - 数据录入: 实现试验数据全流程管理，涵盖采集、处理、审核环节，确保数据完整性和可追溯性。
+   - 报告编制: 根据试验数据自动生成检测报告，支持自定义模板和版本控制。
+   - 报告审核: 实现报告的多级审核流程，确保报告内容的准确性和合规性。
+   - 报告批准: 提供电子化报告批准流程，确保报告的法律效力和安全性。
+   - 报告发放: 管理报告的分发过程，确保受控访问和完整追踪。
+   - 报告归档: 实现报告的长期安全存储，满足法规合规性要求。
+2. **资源管理**，在该模块中，需要实现以下功能：
+   - 人员管理: 实现实验室人员全生命周期管理，包括资质跟踪、能力评估和任务调配。
+   - 设备管理: 实现实验室设备全生命周期管理，包括设备信息管理、状态跟踪、维护记录和责任人分配，保障设备资源的可用性和合规性。
+   - 样品管理: 实现样品从接收到处置的全流程跟踪，确保样品完整性和可追溯性。
+   - 方法管理: 管理实验室检测方法的全生命周期，确保方法合规性和适用性。
+   - 设施环境: 实时监控实验室环境参数，保障试验条件符合检测要求，实现绿色节能管理。
+3. **系统管理**，在该模块中，需要实现以下功能：
+   - 用户管理: 实现实验室人员账户的全生命周期管理，保障系统访问安全性和合规性。
+   - 权限控制: 实现基于角色和字段的精细化权限管理体系，保障系统操作合规性和数据安全性。
+   - 系统安全: 数据库加密存储（TDE）、防SQL注入/XSS攻击、病毒防护接口（对接杀毒软件）、数据备份策略（每日增量+每周全量）。
+   - 日志管理: 实现全系统操作和异常的可审计追踪，满足合规性要求和故障排查需求。
+   - 系统监控: 实时资源监控（CPU/内存/存储）、服务健康状态看板、自动告警通知（邮件/短信）
+
+## 技术栈
+
+- 核心框架: vue + vite
+- 路由: vue-router
+- 状态管理: pinia
+- HTTP 客户端: axios
+- UI 框架: vuetify
+- 图表: echarts
+
+## 联系我
+
+- 微信公众号：南荣相如
+- 邮箱：1282301776@qq.com
+- 主页：https://home.nanrong.store/
+- Github: https://github.com/zcqiand
+
+## 捐赠支持
+
+如果觉得我们的内容对于你有所帮助，请作者喝杯咖啡吧！ 后续会继续完善更新！一起加油！
+
+![](https://home.nanrong.store/assets/zhifu.png)
