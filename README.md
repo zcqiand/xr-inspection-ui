@@ -6,13 +6,6 @@
 
 该项目为前后端分离项目的前端部分，后端项目地址：[传送门](https://github.com/zcqiand/xr-inspection-api)。
 
-## 系统文档
-
-- [产品需求文档](./docs/product_requirement_docs.md)
-- [系统架构](./docs/architecture.md)
-- [技术规范](./docs/technical.md)
-- [更新日志](./tasks/changelog.md)
-
 ## 功能模块
 
 1. **试验过程管理**，在该模块中，需要实现以下功能：
@@ -45,6 +38,13 @@
 - HTTP 客户端: axios
 - UI 框架: vuetify
 - 图表: echarts
+
+## 系统文档
+
+- [产品需求文档](./docs/product_requirement_docs.md)
+- [系统架构](./docs/architecture.md)
+- [技术规范](./docs/technical.md)
+- [更新日志](./tasks/changelog.md)
 
 ## 联系我
 
